@@ -1,0 +1,40 @@
+.home-banner {
+  position: relative;
+
+  .home-contact {
+    position: relative;
+    @include large-desktop {
+      position: absolute;
+      top: 50%;
+      right: 100px;
+      transform: translate(0%, -50%);
+    }
+  }
+}
+
+.custom-posts {
+  .elementor-post__text {
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: row !important;
+    align-items: center;
+    h3 {
+      width: 80%;
+    }
+    .elementor-post__read-more {
+      display: flex !important;
+      align-items: center;
+      height: 100%;
+      width: 10%;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+#ship-to-different-address-checkbox:checked ~ #order_comments_field {
+  top: -1120px;
+}
+
+.logo-white img {
+  filter: brightness(0) invert(1);
+}
