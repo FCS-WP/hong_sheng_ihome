@@ -1,40 +1,69 @@
-.home-banner {
-  position: relative;
-
-  .home-contact {
-    position: relative;
-    @include large-desktop {
-      position: absolute;
-      top: 50%;
-      right: 100px;
-      transform: translate(0%, -50%);
-    }
-  }
-}
-
-.custom-posts {
-  .elementor-post__text {
-    display: flex !important;
-    justify-content: space-between;
-    flex-direction: row !important;
-    align-items: center;
-    h3 {
-      width: 80%;
-    }
-    .elementor-post__read-more {
-      display: flex !important;
-      align-items: center;
-      height: 100%;
-      width: 10%;
-      padding-bottom: 20px;
-    }
-  }
-}
-
-#ship-to-different-address-checkbox:checked ~ #order_comments_field {
-  top: -1120px;
-}
-
 .logo-white img {
   filter: brightness(0) invert(1);
+}
+
+.elementor-wc-products ul.products li.product{
+	background: transparent !important;
+}
+
+.elementor-search-form--button-type-icon .elementor-widget-container{
+	border-width: 3px !important;
+	border-color: #fff !important;
+}
+
+.elementor-search-form--button-type-icon .elementor-search-form__container{
+	background: #eeeff1 !important;
+}
+
+
+.elementor-search-form--button-type-icon .elementor-search-form__container input{
+	color: #000 !important;
+}
+
+.elementor-element.elementor-element-0dfa76b.e-con-full.e-flex.e-con.e-child{
+	z-index: 1;
+}
+
+.elementor-menu-cart__product-price{
+  .quantity{
+    color: #000;
+  }
+}
+
+.elementor-button.elementor-button--checkout.elementor-size-md{
+  background-color: var(--e-global-color-primary);
+}
+
+.page-id-7 {
+  .page-content{
+    margin-top: 130px;
+    margin-bottom: 100px;
+  }
+}
+
+.elementor-menu-cart__footer-buttons .elementor-button--view-cart{
+  color: var(--e-global-color-text) !important;
+  background-color: var(--e-global-color-secondary) !important;
+  border-color: var(--e-global-color-secondary) !important;
+}
+
+.page-id-8 {
+  .page-content{
+    margin-top: 130px;
+    margin-bottom: 100px;
+  }
+}
+
+.woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) #respond input#submit.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) a.button.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) button.button.alt, .woocommerce:where(body:not(.woocommerce-block-theme-has-button-styles)) input.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce #respond input#submit.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce a.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce button.button.alt, :where(body:not(.woocommerce-block-theme-has-button-styles)) .woocommerce input.button.alt{
+  background-color: var(--e-global-color-primary);
+}
+
+.elementor-element > .elementor-widget-container{
+  border-color: #fff !important;
+}
+
+@media(max-width: 768px){
+  .product-category-home{
+    position: relative !important;
+  }
 }
