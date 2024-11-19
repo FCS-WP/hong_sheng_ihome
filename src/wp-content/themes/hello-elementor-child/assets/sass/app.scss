@@ -67,3 +67,24 @@
     position: relative !important;
   }
 }
+
+
+.main-slider img, .thumbnail-slider img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.thumbnail-slider .slick-slide {
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.thumbnail-slider .slick-slide:hover{
+  opacity: 1;
+}
+.thumbnail-slider .slick-current {
+  opacity: 1;
+}
+
+.slick-next:before, .slick-prev:before{
+  color: var(--e-global-color-primary) !important;
+}
