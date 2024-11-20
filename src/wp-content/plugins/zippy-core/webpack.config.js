@@ -76,11 +76,11 @@ module.exports = [
         //load svg
         {
           test: /\.svg$/,
-          use: ["@svgr/webpack"],
+          use:  ['@svgr/webpack'],
           issuer: {
-            and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
+              and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
           },
-        },
+        }
       ],
     },
     // externals: {
